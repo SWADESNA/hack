@@ -6,7 +6,7 @@
   tasks:
 
   - name: "Yadda yadda"
-    amazon.aws.ec2_instance:
+    community.aws.ec2_instance:
       region: "us-east-2"
       state: absent
       wait: false

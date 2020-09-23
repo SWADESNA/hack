@@ -1,0 +1,15 @@
+---
+- name: "Testing"
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+
+  - name: "Yadda yadda"
+    amazon.aws.ec2_instance:
+      region: "us-east-2"
+      state: absent
+      wait: false
+      filters:
+        "tag:mysidlabs_owner": "siduser299"
+...
